@@ -1,0 +1,6 @@
+WinWait("[CLASS:#32770]","",10)
+ControlFocus("Open","","Edit1")
+Sleep(2000)
+ControlSetText("Open","","Edit1","C:\Users\RAJESH\Pictures\20170914_203517.jpg")
+Sleep(2000)
+ControlClick("Open","","Button1")

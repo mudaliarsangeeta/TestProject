@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="seleniumdaysixpakage.ListenerClass" />
+</listeners>
+  <test thread-count="5" name="TestListener">
+    <classes>
+      <class name = "seleniumdaysixpakage.loggingClass">
+      <methods>
+      <include name = "successMethod" />
+      <include name = "failureMethod" />
+      <include name = "skipMethod" />
+      
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- TestListener -->
+</suite> <!-- Suite -->
